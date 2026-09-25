@@ -19,6 +19,6 @@ class point{
     }
 };
 int main(){
-    point p(3,4);
+    point p(3,5);
     p.show();
 }
