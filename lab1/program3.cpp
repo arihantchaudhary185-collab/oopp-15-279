@@ -4,22 +4,22 @@ using namespace std;
 
 class Point
 {
-    int x, y;
+    int a, b;
 
 public:
     void input()
     {
-        cout << "Enter x: ";
-        cin >> x;
+        cout << "Enter a: ";
+        cin >> a;
 
-        cout << "Enter y: ";
-        cin >> y;
+        cout << "Enter b: ";
+        cin >> b;
     }
 
     void show()
     {
-        cout << "x = " << x << endl;
-        cout << "y = " << y << endl;
+        cout << "a = " << a << endl;
+        cout << "b = " << b << endl;
     }
 };
 
