@@ -36,11 +36,11 @@ int main()
     cin >> length >> width;
     cout << "Area of Rectangle = " << area(length, width) << endl;
 
-    cout << "Enter side of square: ";
+    cout << "Enter side of sqr: ";
     cin >> side;
     cout << "Area of Square = " << area(side) << endl;
 
-    cout << "Enter base and height of triangle: ";
+    cout << "Enter base and height of tri: ";
     cin >> base >> height;
     cout << "Area of Triangle = " << area(base, height, true) << endl;
 
