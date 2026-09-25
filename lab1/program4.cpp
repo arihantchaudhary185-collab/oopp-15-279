@@ -28,6 +28,7 @@ int main()
     cout << "Enter time 1 (hh mm ss): ";
     cin >> h >> m >> s;
     t1.input(h, m, s);
+    cout << "Enter time 1 (hh mm ss): ";
 
     cout << "Enter time 2 (hh mm ss): ";
     cin >> h >> m >> s;
