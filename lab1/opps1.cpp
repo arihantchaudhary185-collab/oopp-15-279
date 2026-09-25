@@ -68,4 +68,5 @@ void displayResult(char branch[], int roll, int total, float percentage)
     printf("Roll Number : %d\n", roll);
     printf("Total Marks : %d\n", total);
     printf("Percentage  : %.2f%%\n", percentage);
+    printf("\n----- Student End -----\n");
 }
