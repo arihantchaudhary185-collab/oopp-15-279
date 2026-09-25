@@ -19,7 +19,7 @@ int multiply(int a, int b = 2)
 int main()
 {
     cout << "Addition: " << add(5) << endl;
-    cout << "Addition of 3 numbers: " << add(5, 10, 15) << endl;
+    cout << "Addition of 3 numbers: " << add(5, 10, 20) << endl;
     cout << "Multiplication: " << multiply(5) << endl;
 
     return 0;
