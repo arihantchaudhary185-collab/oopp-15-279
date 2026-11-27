@@ -70,8 +70,9 @@ int main() {
 
     applyDiscount(cart);
 
-    cout << "--- Cart After 10% Discount ---" << endl;
+    cout << "--- Updated Cart (After 10% Discount on Items > Rs. 1000) ---" << endl;
     displayCart(cart);
+    cout << "\nUpdated Total Payable: Rs. " << calculateTotal(cart) << endl;
 
     return 0;
 }
