@@ -36,6 +36,16 @@ double calculateTotal(const vector<Item>& cart) {
     return total;
 }
 
+Item findMostExpensiveItem(const vector<Item>& cart) {
+    auto maxItem = cart[0];
+    for (const auto& item : cart) {
+        if (item.price > maxItem.price) {
+            maxItem = item;
+        }
+    }
+    return maxItem;
+}
+
 int main() {
     vector<Item> cart = {
         {"Keyboard", 1, 1500.0},
@@ -46,6 +56,9 @@ int main() {
     cout << "--- Initial Cart ---" << endl;
     displayCart(cart);
     cout << "\nTotal Amount Payable: Rs. " << calculateTotal(cart) << endl;
+
+    auto expensive = findMostExpensiveItem(cart);
+    cout << "Most Expensive Item: " << expensive.name << " (Rs. " << expensive.price << ")" << endl;
 
     return 0;
 }
