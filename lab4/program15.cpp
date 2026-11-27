@@ -28,6 +28,14 @@ void displayCart(const vector<Item>& cart) {
     }
 }
 
+double calculateTotal(const vector<Item>& cart) {
+    auto total = 0.0;
+    for (const auto& item : cart) {
+        total += item.quantity * item.price;
+    }
+    return total;
+}
+
 int main() {
     vector<Item> cart = {
         {"Keyboard", 1, 1500.0},
@@ -37,6 +45,7 @@ int main() {
 
     cout << "--- Initial Cart ---" << endl;
     displayCart(cart);
+    cout << "\nTotal Amount Payable: Rs. " << calculateTotal(cart) << endl;
 
     return 0;
 }
