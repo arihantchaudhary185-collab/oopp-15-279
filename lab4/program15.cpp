@@ -46,6 +46,14 @@ Item findMostExpensiveItem(const vector<Item>& cart) {
     return maxItem;
 }
 
+void applyDiscount(vector<Item>& cart) {
+    for (auto& item : cart) {
+        if (item.price > 1000.0) {
+            item.price *= 0.90;
+        }
+    }
+}
+
 int main() {
     vector<Item> cart = {
         {"Keyboard", 1, 1500.0},
@@ -58,7 +66,12 @@ int main() {
     cout << "\nTotal Amount Payable: Rs. " << calculateTotal(cart) << endl;
 
     auto expensive = findMostExpensiveItem(cart);
-    cout << "Most Expensive Item: " << expensive.name << " (Rs. " << expensive.price << ")" << endl;
+    cout << "Most Expensive Item: " << expensive.name << " (Rs. " << expensive.price << ")\n" << endl;
+
+    applyDiscount(cart);
+
+    cout << "--- Cart After 10% Discount ---" << endl;
+    displayCart(cart);
 
     return 0;
 }
